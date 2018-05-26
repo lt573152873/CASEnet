@@ -1,0 +1,20 @@
+#Copyright (c) 2017 Mitsubishi Electric Research Laboratories (MERL).   All rights reserved.
+#
+#The software, documentation and/or data in this file is provided on an "as is" basis, and MERL has no obligations to provide maintenance, support, updates, enhancements or modifications.  MERL specifically disclaims any warranties, including, but not limited to, the implied warranties of merchantability and fitness for any particular purpose.  In no event shall MERL be liable to any party for direct, indirect, special, incidental, or consequential damages, including lost profits, arising out of the use of this software and its documentation, even if MERL has been advised of the possibility of such damages.
+#
+#As more fully described in the license agreement that was required in order to download this software, documentation and/or data, permission to use, copy and modify this software without fee is granted, but only for educational, research and non-commercial purposes. 
+
+train_net: "config/train_CASENet-.prototxt"
+lr_policy: "step"
+base_lr: 1.0e-7
+gamma: 0.1
+iter_size: 10
+stepsize: 10000
+average_loss: 20
+display: 1
+max_iter: 100000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 2000
+snapshot_prefix: "model/CASENet-"
+solver_mode: GPU
